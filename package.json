@@ -1,0 +1,26 @@
+{
+  "name": "coros-review",
+  "version": "0.1.0",
+  "description": "高驰 COROS 训练数据复盘 CLI：每日复盘 / 单次活动分析 / 周负荷与恢复",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "coros-review": "./src/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "daily": "node src/cli.js daily",
+    "week": "node src/cli.js week",
+    "activity": "node src/cli.js activity"
+  },
+  "keywords": [
+    "coros",
+    "cycling",
+    "training",
+    "cli",
+    "复盘"
+  ],
+  "license": "MIT"
+}
