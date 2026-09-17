@@ -1,0 +1,5239 @@
+{
+  "pack": "c-pack-8week",
+  "source": "8_week_Thres_vo2.zip",
+  "generator": "fit-workout-plan-parser (fitdecode) — repeat_until_steps_cmplt 按 rep-1 补遍",
+  "structure": "8 周 × 2 节（SS 甜区/OU + VO2）= 16 节；W4、W8 为减量周",
+  "weekday_mapping": {
+    "SS": "周五（甜区 / Over-Under）",
+    "VO2": "p2 周四 / p3 周二（VO2 阶梯 · 微爆发）"
+  },
+  "intensity_basis": "%FTP 为准（源包全包按 %FTP 表达，无缩放系数）",
+  "ftp_reference_for_watts": 250,
+  "watts_note": "w_at_250 / np_at_250 等瓦数按 FTP=250W 折算，仅作参考；改 FTP 请按 pct_ftp 重算",
+  "courses": [
+    {
+      "file": "Wk1_SS_3x12min_90pct.fit",
+      "week": 1,
+      "session": "SS",
+      "deload": false,
+      "name": "Wk1 SS: 3x12min @90pct",
+      "total_min": 71.0,
+      "work_min": 51.0,
+      "hard_min_gt90pct": 36.0,
+      "pct_range": [
+        57,
+        108
+      ],
+      "np_at_250": 230,
+      "if_at_250": 0.92,
+      "tss_at_250": 100,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 12.0,
+          "pct_ftp": [
+            102,
+            108
+          ],
+          "w_at_250": [
+            255,
+            269
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 12.0,
+          "pct_ftp": [
+            102,
+            108
+          ],
+          "w_at_250": [
+            255,
+            269
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 12.0,
+          "pct_ftp": [
+            102,
+            108
+          ],
+          "w_at_250": [
+            255,
+            269
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk1_VO2_5x4min_118pct.fit",
+      "week": 1,
+      "session": "VO2",
+      "deload": false,
+      "name": "Wk1 VO2: 5x4min @118pct",
+      "total_min": 60.0,
+      "work_min": 40.0,
+      "hard_min_gt90pct": 20.0,
+      "pct_range": [
+        57,
+        141
+      ],
+      "np_at_250": 268,
+      "if_at_250": 1.074,
+      "tss_at_250": 115,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            134,
+            141
+          ],
+          "w_at_250": [
+            335,
+            353
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            134,
+            141
+          ],
+          "w_at_250": [
+            335,
+            353
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            134,
+            141
+          ],
+          "w_at_250": [
+            335,
+            353
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            134,
+            141
+          ],
+          "w_at_250": [
+            335,
+            353
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            134,
+            141
+          ],
+          "w_at_250": [
+            335,
+            353
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk2_SS_4x12min_90pct.fit",
+      "week": 2,
+      "session": "SS",
+      "deload": false,
+      "name": "Wk2 SS: 4x12min @90pct",
+      "total_min": 88.0,
+      "work_min": 68.0,
+      "hard_min_gt90pct": 48.0,
+      "pct_range": [
+        57,
+        108
+      ],
+      "np_at_250": 233,
+      "if_at_250": 0.93,
+      "tss_at_250": 127,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 12.0,
+          "pct_ftp": [
+            102,
+            108
+          ],
+          "w_at_250": [
+            255,
+            269
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 12.0,
+          "pct_ftp": [
+            102,
+            108
+          ],
+          "w_at_250": [
+            255,
+            269
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 12.0,
+          "pct_ftp": [
+            102,
+            108
+          ],
+          "w_at_250": [
+            255,
+            269
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 12.0,
+          "pct_ftp": [
+            102,
+            108
+          ],
+          "w_at_250": [
+            255,
+            269
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk2_VO2_5x4min_121pct_6mR.fit",
+      "week": 2,
+      "session": "VO2",
+      "deload": false,
+      "name": "Wk2 VO2: 5x4min @121pct 6mR",
+      "total_min": 70.0,
+      "work_min": 50.0,
+      "hard_min_gt90pct": 20.0,
+      "pct_range": [
+        57,
+        145
+      ],
+      "np_at_250": 265,
+      "if_at_250": 1.061,
+      "tss_at_250": 131,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk3_SS_3x15min_92pct.fit",
+      "week": 3,
+      "session": "SS",
+      "deload": false,
+      "name": "Wk3 SS: 3x15min @92pct",
+      "total_min": 80.0,
+      "work_min": 60.0,
+      "hard_min_gt90pct": 45.0,
+      "pct_range": [
+        57,
+        110
+      ],
+      "np_at_250": 239,
+      "if_at_250": 0.956,
+      "tss_at_250": 122,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 15.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 15.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 15.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk3_VO2_6x4min_121pct_3minR_6R_.fit",
+      "week": 3,
+      "session": "VO2",
+      "deload": false,
+      "name": "Wk3 VO2: 6x4min @121pct 3minR (6R)",
+      "total_min": 80.0,
+      "work_min": 60.0,
+      "hard_min_gt90pct": 24.0,
+      "pct_range": [
+        57,
+        145
+      ],
+      "np_at_250": 268,
+      "if_at_250": 1.071,
+      "tss_at_250": 153,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            138,
+            145
+          ],
+          "w_at_250": [
+            344,
+            362
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk4_SS_DELOAD_2x10min_85pct.fit",
+      "week": 4,
+      "session": "SS",
+      "deload": true,
+      "name": "Wk4 SS DELOAD: 2x10min @85pct",
+      "total_min": 52.0,
+      "work_min": 32.0,
+      "hard_min_gt90pct": 20.0,
+      "pct_range": [
+        57,
+        102
+      ],
+      "np_at_250": 211,
+      "if_at_250": 0.844,
+      "tss_at_250": 62,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            96,
+            102
+          ],
+          "w_at_250": [
+            241,
+            255
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            96,
+            102
+          ],
+          "w_at_250": [
+            241,
+            255
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 6.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk4_VO2_DELOAD_4x3min_115pct.fit",
+      "week": 4,
+      "session": "VO2",
+      "deload": true,
+      "name": "Wk4 VO2 DELOAD: 4x3min @115pct",
+      "total_min": 52.0,
+      "work_min": 32.0,
+      "hard_min_gt90pct": 12.0,
+      "pct_range": [
+        57,
+        138
+      ],
+      "np_at_250": 243,
+      "if_at_250": 0.973,
+      "tss_at_250": 82,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 3.0,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 3.0,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 3.0,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 3.0,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk5_SS_3x12min_OverUnder_92_106pct.fit",
+      "week": 5,
+      "session": "SS",
+      "deload": false,
+      "name": "Wk5 SS: 3x12min OverUnder 92-106pct",
+      "total_min": 66.0,
+      "work_min": 46.0,
+      "hard_min_gt90pct": 36.0,
+      "pct_range": [
+        57,
+        127
+      ],
+      "np_at_250": 251,
+      "if_at_250": 1.002,
+      "tss_at_250": 110,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk5_VO2_3x8_Microbursts_130_60pct.fit",
+      "week": 5,
+      "session": "VO2",
+      "deload": false,
+      "name": "Wk5 VO2: 3x8 Microbursts 130-60pct",
+      "total_min": 52.0,
+      "work_min": 32.0,
+      "hard_min_gt90pct": 12.0,
+      "pct_range": [
+        57,
+        156
+      ],
+      "np_at_250": 272,
+      "if_at_250": 1.088,
+      "tss_at_250": 103,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk6_SS_4x12min_OverUnder_92_106pct.fit",
+      "week": 6,
+      "session": "SS",
+      "deload": false,
+      "name": "Wk6 SS: 4x12min OverUnder 92-106pct",
+      "total_min": 83.0,
+      "work_min": 63.0,
+      "hard_min_gt90pct": 48.0,
+      "pct_range": [
+        57,
+        127
+      ],
+      "np_at_250": 253,
+      "if_at_250": 1.012,
+      "tss_at_250": 142,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.0,
+          "pct_ftp": [
+            104,
+            110
+          ],
+          "w_at_250": [
+            261,
+            275
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.0,
+          "pct_ftp": [
+            120,
+            127
+          ],
+          "w_at_250": [
+            301,
+            317
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk6_VO2_3x10_Microbursts_130_60pct.fit",
+      "week": 6,
+      "session": "VO2",
+      "deload": false,
+      "name": "Wk6 VO2: 3x10 Microbursts 130-60pct",
+      "total_min": 58.0,
+      "work_min": 38.0,
+      "hard_min_gt90pct": 15.0,
+      "pct_range": [
+        57,
+        156
+      ],
+      "np_at_250": 279,
+      "if_at_250": 1.114,
+      "tss_at_250": 120,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            148,
+            156
+          ],
+          "w_at_250": [
+            369,
+            389
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk7_SS_4x14min_OverUnder_93_107pct.fit",
+      "week": 7,
+      "session": "SS",
+      "deload": false,
+      "name": "Wk7 SS: 4x14min OverUnder 93-107pct",
+      "total_min": 88.0,
+      "work_min": 68.0,
+      "hard_min_gt90pct": 56.0,
+      "pct_range": [
+        57,
+        128
+      ],
+      "np_at_250": 261,
+      "if_at_250": 1.042,
+      "tss_at_250": 159,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.33,
+          "pct_ftp": [
+            106,
+            111
+          ],
+          "w_at_250": [
+            264,
+            278
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.17,
+          "pct_ftp": [
+            122,
+            128
+          ],
+          "w_at_250": [
+            304,
+            320
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk7_VO2_4x8_Microbursts_132_60pct.fit",
+      "week": 7,
+      "session": "VO2",
+      "deload": false,
+      "name": "Wk7 VO2: 4x8 Microbursts 132-60pct",
+      "total_min": 64.0,
+      "work_min": 44.0,
+      "hard_min_gt90pct": 16.0,
+      "pct_range": [
+        57,
+        158
+      ],
+      "np_at_250": 280,
+      "if_at_250": 1.121,
+      "tss_at_250": 134,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 4.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            150,
+            158
+          ],
+          "w_at_250": [
+            375,
+            395
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk8_SS_DELOAD_3x8min_OverUnder_88_98pct.fit",
+      "week": 8,
+      "session": "SS",
+      "deload": true,
+      "name": "Wk8 SS DELOAD: 3x8min OverUnder 88-98pct",
+      "total_min": 54.0,
+      "work_min": 34.0,
+      "hard_min_gt90pct": 24.0,
+      "pct_range": [
+        57,
+        118
+      ],
+      "np_at_250": 229,
+      "if_at_250": 0.917,
+      "tss_at_250": 76,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 2.67,
+          "pct_ftp": [
+            100,
+            105
+          ],
+          "w_at_250": [
+            249,
+            263
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.33,
+          "pct_ftp": [
+            111,
+            118
+          ],
+          "w_at_250": [
+            278,
+            294
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.67,
+          "pct_ftp": [
+            100,
+            105
+          ],
+          "w_at_250": [
+            249,
+            263
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.33,
+          "pct_ftp": [
+            111,
+            118
+          ],
+          "w_at_250": [
+            278,
+            294
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.67,
+          "pct_ftp": [
+            100,
+            105
+          ],
+          "w_at_250": [
+            249,
+            263
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.33,
+          "pct_ftp": [
+            111,
+            118
+          ],
+          "w_at_250": [
+            278,
+            294
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.67,
+          "pct_ftp": [
+            100,
+            105
+          ],
+          "w_at_250": [
+            249,
+            263
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.33,
+          "pct_ftp": [
+            111,
+            118
+          ],
+          "w_at_250": [
+            278,
+            294
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.67,
+          "pct_ftp": [
+            100,
+            105
+          ],
+          "w_at_250": [
+            249,
+            263
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.33,
+          "pct_ftp": [
+            111,
+            118
+          ],
+          "w_at_250": [
+            278,
+            294
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 2.67,
+          "pct_ftp": [
+            100,
+            105
+          ],
+          "w_at_250": [
+            249,
+            263
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 1.33,
+          "pct_ftp": [
+            111,
+            118
+          ],
+          "w_at_250": [
+            278,
+            294
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    },
+    {
+      "file": "Wk8_VO2_DELOAD_2x6_Microbursts_115_60pct.fit",
+      "week": 8,
+      "session": "VO2",
+      "deload": true,
+      "name": "Wk8 VO2 DELOAD: 2x6 Microbursts 115-60pct",
+      "total_min": 37.0,
+      "work_min": 17.0,
+      "hard_min_gt90pct": 6.0,
+      "pct_range": [
+        57,
+        138
+      ],
+      "np_at_250": 231,
+      "if_at_250": 0.925,
+      "tss_at_250": 53,
+      "steps": [
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "warmup"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 5.0,
+          "pct_ftp": [
+            57,
+            60
+          ],
+          "w_at_250": [
+            142,
+            150
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            130,
+            138
+          ],
+          "w_at_250": [
+            326,
+            344
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 0.5,
+          "pct_ftp": [
+            68,
+            72
+          ],
+          "w_at_250": [
+            170,
+            180
+          ],
+          "phase": "interval"
+        },
+        {
+          "min": 10.0,
+          "pct_ftp": [
+            58,
+            88
+          ],
+          "w_at_250": [
+            146,
+            219
+          ],
+          "phase": "cooldown"
+        }
+      ]
+    }
+  ]
+}

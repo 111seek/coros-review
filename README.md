@@ -72,6 +72,21 @@ node src/cli.js week                                 # 近 7 天复盘
 node scripts/smoke-offline.mjs   # 离线冒烟：桩数据验证输出渲染，不连真实 server
 ```
 
+## 训练资料（`training/`）
+
+除了 CLI，本仓库还收录个人公路车功率训练的三块材料，便于集中管理和版本化：
+
+| 目录 | 内容 |
+|---|---|
+| `training/plan/` | **冬训周期化计划**（单文件 HTML，FTP 可调、含日历与运动量总结）+ 单节课程卡 |
+| `training/course-library/` | **课型基座**：12 个课型 × 6 种能力，整理自《自行车功率训练完全指南》附录 A |
+| `training/course-packs/` | **外部课程包**：C 包 8 周六修 16 节 FIT + 机器可读 `manifest.json` |
+| `training/reports/` | 外部计划包 A/B 的拆解与适配性对比报告 |
+
+细节见 [`training/README.md`](training/README.md)。
+
+> HTML 产物均为单文件、零依赖，双击即可打开；改表头 FTP 会按 `%FTP` 重算全表瓦数。
+
 ## License
 
 MIT

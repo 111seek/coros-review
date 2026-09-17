@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>功率训练课库 · 整理自《自行车功率训练完全指南》附录 A</title>
+<style>
+  :root{
+    --bg:#0b0d0c; --card:#111411; --card2:#171b17; --line:#242a24;
+    --text:#f1f3e9; --sub:#c3c9bd; --muted:#8b938a; --faint:#5f665d;
+    --accent:#d6ff64; --base:#8f978d;
+    --c-aer:#5bb8e8;   /* 有氧耐力 */
+    --c-str:#f0a35e;   /* 肌肉力量 */
+    --c-sk:#9d8df1;    /* 速度技能 */
+    --c-me:#d6ff64;    /* 肌肉耐力 */
+    --c-an:#ff7b7b;    /* 无氧耐力 */
+    --c-sp:#ffd166;    /* 冲刺能力 */
+    --z1:#6b7a72; --z2:#5bb8e8; --z3:#8fd14f; --z4:#d6ff64; --z5:#ffb84d; --z6:#ff7b7b; --z7:#ff5db1;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    line-height:1.6; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+  a{color:inherit;text-decoration:none}
+
+  /* ---------- 头部 ---------- */
+  header{padding:56px 0 30px;border-bottom:1px solid var(--line)}
+  .src{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;color:var(--accent);
+       border:1px solid rgba(214,255,100,.32);background:rgba(214,255,100,.07);border-radius:100px;padding:5px 13px}
+  .src i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block}
+  h1{font-size:38px;line-height:1.2;letter-spacing:-.8px;margin:18px 0 10px;font-weight:900}
+  h1 small{display:block;font-size:15px;font-weight:600;color:var(--muted);letter-spacing:0;margin-top:10px}
+  .lead{color:var(--sub);font-size:14.5px;max-width:830px;margin:6px 0 0}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+  .pill{font-size:12px;font-weight:700;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px 11px}
+  .pill b{color:var(--text)}
+
+  /* ---------- 导航 ---------- */
+  nav{position:sticky;top:0;z-index:20;background:rgba(11,13,12,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-in{display:flex;gap:6px;overflow-x:auto;padding:10px 28px;max-width:1180px;margin:0 auto;scrollbar-width:none}
+  .nav-in::-webkit-scrollbar{display:none}
+  .nav-in a{font-size:12.5px;font-weight:700;color:var(--muted);padding:6px 11px;border-radius:8px;white-space:nowrap;border:1px solid transparent}
+  .nav-in a:hover{color:var(--text);background:var(--card);border-color:var(--line)}
+
+  /* ---------- 通用区块 ---------- */
+  section{padding-top:52px}
+  .sec-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+  .sec-h h2{font-size:23px;font-weight:900;letter-spacing:-.4px;margin:0}
+  .sec-h .num{font-size:12px;font-weight:900;color:var(--bg);background:var(--accent);border-radius:6px;padding:2px 8px;letter-spacing:.5px}
+  .sec-p{color:var(--muted);font-size:13.5px;margin:0 0 20px;max-width:860px}
+  .srcnote{font-size:11.5px;color:var(--faint);font-weight:600}
+
+  /* ---------- 功率区间表 ---------- */
+  .zbox{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+  .zhead{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:14px 18px;border-bottom:1px solid var(--line);background:var(--card2)}
+  .zhead .t{font-size:13.5px;font-weight:800}
+  .zhead .t span{color:var(--muted);font-weight:600;margin-left:8px}
+  .ftp{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted);font-weight:700}
+  .ftp input{width:74px;font:inherit;font-size:15px;font-weight:900;color:var(--accent);background:transparent;
+    border:0;border-bottom:1.5px dashed #3a4239;text-align:center;padding:2px 4px;appearance:none;-webkit-appearance:none}
+  .ftp input:focus{outline:none;border-bottom-color:var(--accent)}
+  .zscroll{overflow-x:auto}
+  table.zt{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+  table.zt th{text-align:left;font-size:11px;font-weight:800;letter-spacing:.6px;color:var(--muted);
+    padding:10px 14px;border-bottom:1px solid var(--line);white-space:nowrap;text-transform:uppercase}
+  table.zt td{padding:12px 14px;border-bottom:1px solid #1b1f1b;vertical-align:top;color:var(--sub)}
+  table.zt tr:last-child td{border-bottom:0}
+  .zid{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:8px;
+    font-size:12.5px;font-weight:900;color:#0b0d0c}
+  .zname{font-weight:800;color:var(--text);white-space:nowrap}
+  .zftp{font-weight:800;color:var(--text);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .zw{font-weight:800;color:var(--accent);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .zrpe{font-weight:700;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .zdesc{font-size:12.5px;line-height:1.55;color:var(--sub);min-width:320px}
+
+  /* ---------- 能力图例 ---------- */
+  .legend{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:22px 0 6px}
+  .lg{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 12px;border-top:3px solid var(--tc)}
+  .lg .n{font-size:13px;font-weight:800;color:var(--text)}
+  .lg .d{font-size:11px;color:var(--muted);margin-top:3px;line-height:1.4}
+  .lg .c{font-size:11px;font-weight:800;color:var(--tc);margin-top:5px}
+
+  /* ---------- 课型卡 ---------- */
+  .cat{margin-top:34px}
+  .cat-h{display:flex;align-items:center;gap:10px;margin-bottom:14px}
+  .cat-h .bar{width:4px;height:20px;border-radius:2px;background:var(--tc)}
+  .cat-h h3{font-size:17px;font-weight:900;margin:0;letter-spacing:-.2px}
+  .cat-h .cnt{font-size:11.5px;font-weight:800;color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:100px;padding:2px 9px}
+  .cat-h .pur{font-size:12px;color:var(--muted);font-weight:600;margin-left:auto}
+
+  .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:17px 18px;border-left:3px solid var(--tc);transition:transform .15s,border-color .15s}
+  .card:hover{transform:translateY(-2px);border-color:#333a33}
+  .card.wide{grid-column:1/-1}
+  .ch{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+  .ch h4{font-size:16.5px;font-weight:900;margin:0;letter-spacing:-.2px}
+  .big{font-size:12.5px;font-weight:900;color:var(--tc);white-space:nowrap;background:var(--card2);
+       border:1px solid var(--line);border-radius:9px;padding:5px 10px;font-variant-numeric:tabular-nums}
+  .goal{font-size:12.5px;color:var(--sub);margin:9px 0 13px;padding-bottom:12px;border-bottom:1px dashed #232823}
+  .goal b{color:var(--tc);font-weight:800}
+
+  .spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 16px}
+  .row{display:flex;gap:10px;font-size:12.5px;align-items:baseline}
+  .row .k{flex:0 0 62px;color:var(--faint);font-weight:800;font-size:11.5px;letter-spacing:.3px}
+  .row .v{color:var(--sub);flex:1}
+  .row .v em{font-style:normal;color:var(--text);font-weight:800;font-variant-numeric:tabular-nums}
+  .row.full{grid-column:1/-1}
+
+  ul.pts{list-style:none;margin:13px 0 0;padding:0}
+  ul.pts li{font-size:12.5px;color:var(--sub);padding-left:15px;position:relative;margin:5px 0;line-height:1.5}
+  ul.pts li::before{content:"";position:absolute;left:1px;top:7px;width:5px;height:5px;border-radius:50%;background:var(--tc);opacity:.85}
+  ul.pts li b{color:var(--text)}
+  ul.pts li.warn::before{background:#ff7b7b}
+  ul.pts li.warn{color:#ffc9c9}
+  ul.pts li.warn b{color:#ff9d9d}
+  .calc{margin-top:11px;font-size:11.5px;font-weight:700;color:var(--muted);background:var(--card2);border:1px solid var(--line);border-radius:9px;padding:8px 11px}
+  .calc b{color:var(--accent);font-variant-numeric:tabular-nums}
+
+  /* ---------- 原则卡 ---------- */
+  .duo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:18px}
+  .pcard h4{margin:0 0 4px;font-size:16px;font-weight:900}
+  .pcard .from{font-size:11.5px;font-weight:800;color:var(--accent);margin-bottom:12px;display:block}
+  table.pt{width:100%;border-collapse:collapse;font-size:13px;margin-top:6px}
+  table.pt th{text-align:left;font-size:11px;font-weight:800;color:var(--muted);padding:8px 10px;border-bottom:1px solid var(--line)}
+  table.pt td{padding:9px 10px;border-bottom:1px solid #1b1f1b;color:var(--sub);font-size:12.5px}
+  table.pt tr:last-child td{border-bottom:0}
+  table.pt td.sp{font-weight:900;color:var(--text);white-space:nowrap;font-variant-numeric:tabular-nums}
+  .q{border-left:3px solid var(--accent);padding:2px 0 2px 13px;margin:12px 0;font-size:13px;color:var(--text);font-weight:600}
+
+  /* ---------- 期 ---------- */
+  .phases{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:6px}
+  .ph{background:var(--card);border:1px solid var(--line);border-radius:15px;padding:17px 18px;border-top:3px solid var(--tc)}
+  .ph h4{margin:0 0 8px;font-size:15.5px;font-weight:900}
+  .ph ul{list-style:none;margin:0;padding:0}
+  .ph li{font-size:12.5px;color:var(--sub);padding-left:15px;position:relative;margin:6px 0;line-height:1.5}
+  .ph li::before{content:"";position:absolute;left:1px;top:7px;width:5px;height:5px;border-radius:50%;background:var(--tc)}
+
+  footer{margin-top:64px;padding:26px 0 46px;border-top:1px solid var(--line);color:var(--faint);font-size:12px}
+  footer b{color:var(--muted)}
+  footer .pg{margin-top:8px;line-height:1.9}
+
+  @media (max-width:1000px){
+    .legend{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .grid{grid-template-columns:1fr}
+  }
+  @media (max-width:720px){
+    .wrap,.nav-in{padding:0 16px}
+    h1{font-size:28px}
+    .legend{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .duo,.phases{grid-template-columns:1fr}
+    .spec{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="src"><i></i>原始出处 · 附录 A「功率训练」</span>
+    <h1>功率训练课库
+      <small>《自行车功率训练完全指南》THE POWER METER HANDBOOK · 附录 A（印刷页 205–209）+ 它直接引用的表 4.1 / 表 5.2</small>
+    </h1>
+    <p class="lead">把原书附录 A 的 12 个课型，按「强度 / 时长与组次 / 组间休息 / 训练目的」四项拆成可直接照做的一张张卡；附录里引用的功率区间、50-40-30-20-10 原则、火柴三个概念一并附上原文口径。<b>只做搬运与排版，未引入原书以外的训练理论。</b></p>
+    <div class="meta">
+      <span class="pill">课型 <b>12</b> 个</span>
+      <span class="pill">能力分类 <b>6</b> 类</span>
+      <span class="pill">强度标尺 = 表 4.1（<b>7</b> 区 · %FTP）</span>
+      <span class="pill">原文明确：<b>附录不含热身</b></span>
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="nav-in">
+    <a href="#zones">功率区间表</a>
+    <a href="#cat1">有氧耐力</a>
+    <a href="#cat2">肌肉力量</a>
+    <a href="#cat3">速度技能</a>
+    <a href="#cat4">肌肉耐力</a>
+    <a href="#cat5">无氧耐力</a>
+    <a href="#cat6">冲刺能力</a>
+    <a href="#rules">50-40-30-20-10</a>
+    <a href="#matches">火柴</a>
+    <a href="#phase">基础期 / 强化期</a>
+  </div>
+</nav>
+
+<!-- ============ 1. 功率区间 ============ -->
+<section id="zones">
+  <div class="wrap">
+    <div class="sec-h"><span class="num">01</span><h2>先定标尺：功率区间（表 4.1）</h2></div>
+    <p class="sec-p">附录 A 里所有课型的强度都写成「功率 N 区」「IF 0.88–0.93」，所以先把这张表放在最前面。原书口径：<b>区间以 FTP 的百分比表示</b>，RPE 采用 0–10 系统。</p>
+
+    <div class="zbox">
+      <div class="zhead">
+        <div class="t">表 4.1　功率区间 <span>（区间 · FTP% · RPE · 描述）</span></div>
+        <label class="ftp">FTP<input id="ftpIn" type="number" step="1" min="80" max="500" value="250">W</label>
+      </div>
+      <div class="zscroll">
+        <table class="zt">
+          <thead>
+            <tr><th>区间</th><th>名称</th><th>FTP%</th><th>瓦数（换算）</th><th>RPE</th><th>原书描述要点</th></tr>
+          </thead>
+          <tbody id="zBody"></tbody>
+        </table>
+      </div>
+    </div>
+    <p class="srcnote">※「瓦数」一列不是原书内容——原书只给 %FTP。这里按你码表设定的 FTP 现算，方便直接落到码表上；改上面的数字整列跟着变。</p>
+
+    <div class="legend">
+      <div class="lg" style="--tc:var(--c-aer)"><div class="n">有氧耐力</div><div class="d">最基础，决定后面能不能完成比赛任务</div><div class="c">2 课型</div></div>
+      <div class="lg" style="--tc:var(--c-str)"><div class="n">肌肉力量</div><div class="d">最基础 · 关节负荷大</div><div class="c">1 课型</div></div>
+      <div class="lg" style="--tc:var(--c-sk)"><div class="n">速度技能</div><div class="d">最基础 · 踩踏技术</div><div class="c">1 课型</div></div>
+      <div class="lg" style="--tc:var(--c-me)"><div class="n">肌肉耐力</div><div class="d">直接指向 FTP</div><div class="c">3 课型</div></div>
+      <div class="lg" style="--tc:var(--c-an)"><div class="n">无氧耐力</div><div class="d">强化期主力</div><div class="c">3 课型</div></div>
+      <div class="lg" style="--tc:var(--c-sp)"><div class="n">冲刺能力</div><div class="d">最短时间最高功率</div><div class="c">2 课型</div></div>
+    </div>
+    <p class="srcnote" style="display:block;margin-top:12px">原书原话（附录 A 开头）：下面的训练内容按照第 4 章讲到的训练能力来分类，<b>这里只列出了一些例子</b>，trainingpeaks.com 上也提供了上百种训练方法。</p>
+  </div>
+</section>
+
+<!-- ============ 2. 课库 ============ -->
+<section id="lib">
+  <div class="wrap">
+    <div class="sec-h"><span class="num">02</span><h2>12 个课型 · 按能力分 6 组</h2></div>
+    <p class="sec-p">每张卡的四项固定读法：<b>强度</b>（用表 4.1 的区或 IF）、<b>时长 / 组次</b>、<b>组间休息</b>、<b>目的</b>；底部附原文提到的执行要点与风险提示。原书明确「默认能在训练正式开始前正确热身，因此附录不包含热身内容」。</p>
+
+    <!-- ---------- 有氧耐力 ---------- -->
+    <div class="cat" id="cat1">
+      <div class="cat-h">
+        <span class="bar" style="background:var(--c-aer)"></span>
+        <h3 style="color:var(--c-aer)">有氧耐力训练</h3>
+        <span class="cnt">2 课型</span>
+        <span class="pur">按第 6 章：基础期的首要目标就是它</span>
+      </div>
+      <div class="grid">
+
+        <div class="card" style="--tc:var(--c-aer)">
+          <div class="ch"><h4>有氧阈值</h4><span class="big">连续骑</span></div>
+          <div class="goal">目的：<b>提高有氧耐力</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v">心率 <em>2 区下半段</em>稳定骑行</span></div>
+            <div class="row"><span class="k">时长</span><span class="v">按项目查第 <em>8~10</em> 章</span></div>
+            <div class="row"><span class="k">功率</span><span class="v">可能发生变化，<em>只要心率在相应区间内就可以</em></span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">不适用（一次骑完）</span></div>
+          </div>
+          <ul class="pts">
+            <li>强度锚在<b>心率</b>而不是功率——这是附录里唯一以心率为主指标的有氧课。</li>
+            <li>骑完做数据分析，原书指定看三项：<b>变化指数、效率系数（EF）、解耦信息</b>。</li>
+          </ul>
+        </div>
+
+        <div class="card" style="--tc:var(--c-aer)">
+          <div class="ch"><h4>有氧节奏</h4><span class="big">≥ 2 h</span></div>
+          <div class="goal">目的：<b>保持有氧耐力</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v">稳定在功率 <em>2 区</em></span></div>
+            <div class="row"><span class="k">时长</span><span class="v">骑至<b>比赛相应的时长</b>，通常 <em>2 小时或更长</em></span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">不适用（一次骑完）</span></div>
+            <div class="row"><span class="k">节奏</span><span class="v">全程套用 <em>50-40-30-20-10</em> 原则</span></div>
+          </div>
+          <ul class="pts">
+            <li>原书要求的两个执行原则：<b>50-40-30-20-10 原则</b> + <b>遇到爬坡时的火柴使用原则</b>（见下方两节）。</li>
+            <li>课后同样看<b>变化指数、效率系数、解耦</b>。</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ---------- 肌肉力量 ---------- -->
+    <div class="cat" id="cat2">
+      <div class="cat-h">
+        <span class="bar" style="background:var(--c-str)"></span>
+        <h3 style="color:var(--c-str)">肌肉力量训练</h3>
+        <span class="cnt">1 课型</span>
+        <span class="pur">六个课型里唯一带「受伤风险」警告的</span>
+      </div>
+      <div class="grid">
+        <div class="card wide" style="--tc:var(--c-str)">
+          <div class="ch"><h4>力量重复</h4><span class="big">1~3 组 × 3 次</span></div>
+          <div class="goal">目的：<b>提高肌肉力量</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v">功率峰值<b>至少达到 2 倍 FTP</b></span></div>
+            <div class="row"><span class="k">组次</span><span class="v">每次训练 <em>1~3 组</em>，每组 <em>3 次</em>；每次重复踩踏 <em>6~12 圈</em>（单腿计数）</span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">重复之间 <em>1 区恢复 3 分钟</em>；每组之间 <em>恢复 6 分钟</em></span></div>
+            <div class="row"><span class="k">场地</span><span class="v">上坡或平路；选较高挡位（例如 <em>53×14</em>）爬坡，然后滑行回坡底或起点</span></div>
+            <div class="row full"><span class="k">动作</span><span class="v">保持<b>坐姿</b>，大力踩踏；起始踏频非常低（可能<b>不到 50 转/分</b>），逐渐增加踏频</span></div>
+          </div>
+          <ul class="pts">
+            <li class="warn"><b>受伤风险很高</b>——原书特别点名膝关节，<b>出现不适感应立即停止训练</b>。</li>
+            <li>这是「力量」课，不是耐力课：看的是每一次踩踏的<b>峰值功率</b>，所以用重挡、低踏频。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- 速度技能 ---------- -->
+    <div class="cat" id="cat3">
+      <div class="cat-h">
+        <span class="bar" style="background:var(--c-sk)"></span>
+        <h3 style="color:var(--c-sk)">速度技能训练</h3>
+        <span class="cnt">1 课型</span>
+        <span class="pur">可以插进任何一次骑行里</span>
+      </div>
+      <div class="grid">
+        <div class="card wide" style="--tc:var(--c-sk)">
+          <div class="ch"><h4>高踏频间歇训练</h4><span class="big">几分钟 / 次</span></div>
+          <div class="goal">目的：<b>提高踩踏效率</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v">把踏频提高到<b>身体感到略微不舒服</b>，然后保持至间歇结束；<b>使用低挡位</b></span></div>
+            <div class="row"><span class="k">时长</span><span class="v">在任意训练中插入<b>几分钟</b>的高踏频间歇</span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">间歇后<b>用正常踏频恢复几分钟</b></span></div>
+            <div class="row"><span class="k">递进</span><span class="v">在<b>几周的时间内</b>，逐渐增加每次间歇的时间和总时间</span></div>
+          </div>
+          <ul class="pts">
+            <li>原书对它的定位：提高踩踏技术的方法很多，<b>这个方法应用最普遍、也最基础</b>。</li>
+            <li>强度不以功率为锚，而是以「<b>踏频 + 略不适</b>」为锚，配合低挡位。</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------- 肌肉耐力 ---------- -->
+    <div class="cat" id="cat4">
+      <div class="cat-h">
+        <span class="bar" style="background:var(--c-me)"></span>
+        <h3 style="color:var(--c-me)">肌肉耐力训练</h3>
+        <span class="cnt">3 课型</span>
+        <span class="pur">指向 FTP 的一组，也是全年用得最多的一组</span>
+      </div>
+      <div class="grid">
+
+        <div class="card" style="--tc:var(--c-me)">
+          <div class="ch"><h4>甜区间歇训练</h4><span class="big">2 × 20 min</span></div>
+          <div class="goal">目的：<b>提高功能阈值功率（FTP）</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v">强度因子 <em>IF 0.88~0.93</em></span></div>
+            <div class="row"><span class="k">组次</span><span class="v">完成 <em>2 次 20 分钟</em>的间歇</span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v"><em>1 区恢复 5 分钟</em></span></div>
+            <div class="row"><span class="k">场地</span><span class="v">平路或缓上坡路段</span></div>
+          </div>
+          <ul class="pts">
+            <li><b>刚开始几次的降级做法（原文给的）</b>：拆成 <b>4×10 分钟，恢复 2.5 分钟</b>；或 <b>3×15 分钟，恢复 4 分钟</b>。</li>
+          </ul>
+          <div class="calc">按 FTP <b id="c-ss">—</b> 折算：每组 20 分钟落在 <b id="c-ssR">—</b></div>
+        </div>
+
+        <div class="card" style="--tc:var(--c-me)">
+          <div class="ch"><h4>巡航间歇训练</h4><span class="big">3~5 × 5~12 min</span></div>
+          <div class="goal">目的：<b>提高肌肉耐力</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v">功率 <em>4 区</em></span></div>
+            <div class="row"><span class="k">组次</span><span class="v"><em>3~5 次</em>，每次 <em>5~12 分钟</em></span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">间歇时长的 <em>1/4</em>，保持在功率 <em>1 区</em></span></div>
+            <div class="row"><span class="k">场地</span><span class="v">平路或缓上坡，<b>模拟比赛情况</b></span></div>
+          </div>
+          <ul class="pts">
+            <li>原书给的换算例子：<b>6 分钟间歇 → 90 秒恢复</b>；<b>12 分钟间歇 → 3 分钟恢复</b>。</li>
+            <li><b>上坡特例</b>：因为下坡速度快，恢复时间可能不足 1/4；如果是这样，<b>到达坡底后立即开始下一次间歇</b>。</li>
+          </ul>
+          <div class="calc">按 FTP <b id="c-cr">—</b> 折算：目标功率区间 <b id="c-crR">—</b></div>
+        </div>
+
+        <div class="card wide" style="--tc:var(--c-me)">
+          <div class="ch"><h4>节奏（Tempo）间歇训练</h4><span class="big">N × 20 min</span></div>
+          <div class="goal">目的：<b>提高肌肉耐力</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v">功率 <em>3 区</em></span></div>
+            <div class="row"><span class="k">组次</span><span class="v">几次 <em>20 分钟</em>的间歇——次数按比赛情况定：平路绕圈赛车手 <em>3 次</em>；Ironman 距离铁人三项 / Century 车手 <em>6~8 次</em></span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">每次间歇后在功率 <em>1 区轻松踩 5 分钟</em></span></div>
+            <div class="row"><span class="k">场地</span><span class="v">最好在<b>比赛模拟路段</b>进行</span></div>
+            <div class="row full"><span class="k">递进</span><span class="v">刚开始训练，间歇次数<b>不要太多</b>，逐渐增加</span></div>
+          </div>
+          <ul class="pts">
+            <li>原书要求训练中注意<b>时间节奏战略</b>（50-40-30-20-10 原则和火柴的使用）。</li>
+          </ul>
+          <div class="calc">按 FTP <b id="c-tp">—</b> 折算：目标功率区间 <b id="c-tpR">—</b></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ---------- 无氧耐力 ---------- -->
+    <div class="cat" id="cat5">
+      <div class="cat-h">
+        <span class="bar" style="background:var(--c-an)"></span>
+        <h3 style="color:var(--c-an)">无氧耐力训练</h3>
+        <span class="cnt">3 课型</span>
+        <span class="pur">风险最高的一组，原书两处点名「风险很高」</span>
+      </div>
+      <div class="grid">
+
+        <div class="card wide" style="--tc:var(--c-an)">
+          <div class="ch"><h4>快速集体骑行</h4><span class="big">整场 TSS 对齐比赛</span></div>
+          <div class="goal">目的：<b>为公路大组赛做准备</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">定位</span><span class="v">对于公路车手，这是<b>强化期的终极比赛模拟训练内容</b></span></div>
+            <div class="row"><span class="k">强度</span><span class="v">以<b>达到预计比赛 TSS</b> 为准来安排</span></div>
+            <div class="row"><span class="k">时长</span><span class="v">为了让整个骑行训练达到预计比赛 TSS，<b>整个骑行训练的长度可能要超过集体骑行部分</b></span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">原书未给（这不是一次固定组次的间歇课）——不足的部分<b>可能需要在活动前后安排适当的间歇训练</b>来补</span></div>
+          </div>
+          <ul class="pts">
+            <li>这项课没有固定的组数/休息时长——原书的做法是<b>用整场 TSS 倒推</b>，不够的部分用活动前后的间歇补足。</li>
+          </ul>
+        </div>
+
+        <div class="card" style="--tc:var(--c-an)">
+          <div class="ch"><h4>VO₂max 间歇训练</h4><span class="big">3~8 × 2~4 min</span></div>
+          <div class="goal">目的：<b>提高有氧能力，适应公路赛的压力</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v">功率 <em>5 区</em></span></div>
+            <div class="row"><span class="k">组次</span><span class="v"><em>3~8 次</em>，每次 <em>2~4 分钟</em>；间歇<b>总时间 8~20 分钟</b></span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v"><em>1 区恢复同等时间</em></span></div>
+            <div class="row"><span class="k">场地</span><span class="v">平路或爬坡路段</span></div>
+          </div>
+          <ul class="pts">
+            <li class="warn"><b>这项训练的风险很高</b>，应特别注意膝关节是否有不适。</li>
+            <li>在公共道路训练要注意安全，<b>最好找一段没有路口的公路</b>。</li>
+          </ul>
+          <div class="calc">按 FTP <b id="c-vo2">—</b> 折算：目标功率区间 <b id="c-vo2R">—</b></div>
+        </div>
+
+        <div class="card" style="--tc:var(--c-an)">
+          <div class="ch"><h4>火柴燃烧间歇训练</h4><span class="big">3 组 × 5 次 × 20~30 s</span></div>
+          <div class="goal">目的：<b>让决定比赛成败的高强度火柴「燃烧」做准备</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">结构</span><span class="v">完成<b>几组短间歇</b>，中间配合<b>不完全恢复（1 区）</b></span></div>
+            <div class="row"><span class="k">分组</span><span class="v">按照恢复时间（<b>按 2~5 分钟的量级</b>）将间歇训练进行分组</span></div>
+            <div class="row"><span class="k">强度/时长</span><span class="v">每次间歇的时长、功率是多少以及次数，<b>按你自己定义的火柴（见第 5 章）以及目标比赛的需求</b>来定</span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">间歇之间<b>不完全恢复（1 区）</b>；典型版本为间歇恢复 <em>40~50 秒</em>、每组之间恢复 <em>3 分钟</em></span></div>
+            <div class="row"><span class="k">典型（公路比赛）</span><span class="v"><em>3 组 × 5 次 × 6 区</em>，每次持续 <em>20~30 秒</em>；间歇恢复 <em>40~50 秒</em>；每组之间恢复 <em>3 分钟</em></span></div>
+          </div>
+          <ul class="pts">
+            <li>这是附录里唯一<b>强度与次数由自己赛前「火柴数」决定</b>的课型——不是固定处方。</li>
+          </ul>
+          <div class="calc">按 FTP <b id="c-mb">—</b> 折算：6 区 = <b id="c-mbR">—</b></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ---------- 冲刺能力 ---------- -->
+    <div class="cat" id="cat6">
+      <div class="cat-h">
+        <span class="bar" style="background:var(--c-sp)"></span>
+        <h3 style="color:var(--c-sp)">冲刺能力训练</h3>
+        <span class="cnt">2 课型</span>
+        <span class="pur">「最短时间里达到最高功率」</span>
+      </div>
+      <div class="grid">
+
+        <div class="card" style="--tc:var(--c-sp)">
+          <div class="ch"><h4>变速</h4><span class="big">6~8 次踩踏 / 次</span></div>
+          <div class="goal">目的：<b>在最短的时间里达到最高的功率</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v"><b>全力冲刺</b>，每次可以踩踏 <em>6~8 次</em></span></div>
+            <div class="row"><span class="k">时长</span><span class="v">在一次<b>中低强度骑行</b>中加入几次非常短的冲刺</span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">冲刺间歇之间<b>回到正常强度（例如 2 区）</b>，保证足够长的恢复</span></div>
+            <div class="row"><span class="k">场地/姿势</span><span class="v">平路、上坡、下坡都可以；<b>站立或坐姿</b>；有些握下把、有些握手变；<b>踏频应该很高</b></span></div>
+          </div>
+          <ul class="pts">
+            <li>原书建议：<b>这个训练最好和训练伙伴一起进行</b>。</li>
+          </ul>
+        </div>
+
+        <div class="card" style="--tc:var(--c-sp)">
+          <div class="ch"><h4>爬坡冲刺</h4><span class="big">6~9 次</span></div>
+          <div class="goal">目的：<b>提高冲刺能力</b></div>
+          <div class="spec">
+            <div class="row"><span class="k">强度</span><span class="v">最大输出，<b>高踏频</b>踩踏 <em>10~15 下</em></span></div>
+            <div class="row"><span class="k">组次</span><span class="v"><em>6~9 次</em>冲刺</span></div>
+            <div class="row"><span class="k">组间休息</span><span class="v">每次冲刺后 <em>3~6 分钟</em></span></div>
+            <div class="row"><span class="k">场地/做法</span><span class="v">找一段坡度 <em>4%~6%</em> 的上坡；用<b>加速方式</b>，在到达坡底之前花几秒加速</span></div>
+          </div>
+          <ul class="pts">
+            <li>和「变速」的分工：变速练<b>绝对最高功率</b>（各种地形、6~8 次踩踏），爬坡冲刺练<b>上坡下的爆发</b>（固定坡度、10~15 下）。</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. 两个被引用的原则 ============ -->
+<section id="rules">
+  <div class="wrap">
+    <div class="sec-h"><span class="num">03</span><h2>课型里引用的两个原则</h2></div>
+    <p class="sec-p">「有氧节奏」「节奏间歇」「火柴燃烧」三个课型都直接点名了下面这两个概念，所以把原文口径一并放上，否则课没法照着执行。</p>
+
+    <div class="duo">
+      <div class="pcard">
+        <h4>50-40-30-20-10 原则</h4>
+        <span class="from">原文位置：表 5.2（第 5 章「骑行的强度」）· 来源：Alan Couzens 授权</span>
+        <p style="font-size:12.5px;color:var(--sub);margin:0">原书表述：如果某次比赛你的目标功率是<b>实现平均速度 30 千米/小时</b>，那么——</p>
+        <table class="pt">
+          <thead><tr><th>当你的速度是</th><th>你应该</th></tr></thead>
+          <tbody>
+            <tr><td class="sp">大约 50 千米/小时</td><td>滑行——保持空气动力学姿势并停止踩踏</td></tr>
+            <tr><td class="sp">大约 40 千米/小时</td><td>使功率输出低于目标功率</td></tr>
+            <tr><td class="sp">大约 30 千米/小时</td><td>稳定在目标功率</td></tr>
+            <tr><td class="sp">大约 20 千米/小时</td><td>发力，使功率输出略高于目标功率</td></tr>
+            <tr><td class="sp">大约 10 千米/小时</td><td>使功率输出远高于目标功率</td></tr>
+          </tbody>
+        </table>
+        <ul class="pts">
+          <li>原则是「<b>上坡用力，下坡放松，超过上限开始滑行</b>」，这样能保存体力、提升自行车赛段成绩。</li>
+          <li>原书说这个原则<b>适用于所有稳态骑行运动</b>，不过有些需要进行调整；如果你的目标速度不是 30，就按系数换算表里的数字（例如把 30 换成 40，其余数值相应调整）。</li>
+        </ul>
+      </div>
+
+      <div class="pcard" id="matches">
+        <h4>火柴</h4>
+        <span class="from">原文位置：第 5 章「点燃火柴」（印刷页 82–83）</span>
+        <div class="q">「比较极端的猛烈加速应该被称为『火柴』，每人只有那么几根，用完就没有了。」</div>
+        <ul class="pts" style="margin-top:0">
+          <li>要根据个人情况，在站上起点时就知道<b>自己随身只有为数不多的几根火柴</b>；用在<b>不该用的地方</b>，比赛结果必然不理想；在<b>正确的时间点燃正确数量的火柴</b>，这次比赛就很成功。</li>
+          <li>能量支出上，<b>变奏比赛完全不同于计时赛或铁人三项</b>：公路车赛、绕圈赛、山地车赛的功率输出全程都在明显变化，稳定骑行不可能在这样的比赛中获胜。</li>
+          <li>起步太猛是最常见的错误——「<b>你不是靠前几分钟来赢得比赛的，而这几分钟足以让你丢掉整个比赛</b>」。</li>
+          <li>比赛里的拉扯<b>通常只能维持几秒到一两分钟</b>，并且多出现在<b>出弯、爬坡或试图突围</b>的时候——你需要对这种情况做出反应，或者主动发起进攻。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4. 期 ============ -->
+<section id="phase">
+  <div class="wrap">
+    <div class="sec-h"><span class="num">04</span><h2>12 个课型分别该放在什么时候</h2></div>
+    <p class="sec-p">附录 A 本身不给排期，给排期的是第 6 章。原书把训练内容分成<b>基础期</b>与<b>强化期</b>两段，口径如下（<b>只摘录原文表述</b>）。</p>
+
+    <div class="phases">
+      <div class="ph" style="--tc:var(--c-aer)">
+        <h4>基础期：强身健体</h4>
+        <ul>
+          <li>第 4 章定义的 6 种能力中，<b>前 3 种（有氧耐力、肌肉力量、速度技能）是最基础的</b>，并决定着身体在后期能不能完成比赛任务，因此<b>必须在基础期结束前打好基础</b>。</li>
+          <li>这 6 种能力中，<b>对耐力运动员来说最重要的就是有氧耐力</b>；在进入让自己变快的强化期之前，必须保证有氧能力已经足够强大——<b>强化有氧能力是基础期的首要目标</b>。</li>
+          <li>判断有氧能力是否到位，用功率计和分析软件跟踪两个指标：<b>效率系数（EF）</b>与<b>解耦</b>。</li>
+          <li>原书给的判定线：<b>当解耦率大于 5%，说明有氧耐力还处于较低的水平</b>。</li>
+        </ul>
+      </div>
+      <div class="ph" style="--tc:var(--c-me)">
+        <h4>强化期：准备比赛</h4>
+        <ul>
+          <li>基础期结束时综合体能应该处于比较好的状态，<b>这时 FTP 应该比几周之前高了</b>，通过 EF 和解耦可以知道有氧耐力也处于较高且稳定的状态——<b>这一切都在比赛前 12 周达成</b>。</li>
+          <li>从这时开始让自己变快，<b>训练必须要匹配目标比赛的需求</b>。</li>
+          <li>比赛前这最后 12 周内，表述训练内容与比赛需求的基本因素包括：<b>训练的 IF、训练压力分数（TSS）、火柴和正确的节奏</b>；随着针对性训练的持续进展，这几个因素应该匹配比赛的需求。</li>
+          <li>原书补充：<b>对于高阶车手，可以把几个训练内容结合在一起，组成更长的训练安排，但通常只有在强化期才会这样做</b>。例如热身后，公路车手可能从无氧耐力间歇训练开始，然后进行肌肉耐力间歇训练，最后是功率冲刺训练——<b>综合训练的目的就是让训练更像一场比赛</b>。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>内容来源</b>：《自行车功率训练完全指南》（THE POWER METER HANDBOOK: A USER'S GUIDE FOR CYCLISTS AND TRIATHLETES）
+    <div class="pg">
+      附录 A「功率训练」印刷页 205–209 → 12 个课型的全部参数　｜　表 4.1「功率区间」印刷页 61–62 → 7 区强度标尺<br>
+      表 5.2「50-40-30-20-10 原则」印刷页 81–82　｜　第 5 章「点燃火柴」印刷页 82–83　｜　第 6 章「更强、更快」印刷页 90 与 98
+    </div>
+    <div class="pg">说明：本页只做「原文 → 结构化」的搬运，<b>未引入原书以外的训练理论</b>；唯一额外的内容是「瓦数（换算）」一列，那是按你自己填的 FTP 做的算术，原书只给 %FTP。</div>
+  </div>
+</footer>
+
+<script>
+/* ---------- 表 4.1 数据（附录 A 的强度标尺） ---------- */
+var ZONES = [
+  { id:1, name:'积极恢复',      lo:0,    hi:.55,  loTxt:'<55%',        rpe:'<2',  color:'var(--z1)',
+    desc:'通常也称为「轻松踩踏」或「轻轻踩压」。这是非常低的运动水平，输出和疲劳感也最小，不影响正常交谈；通常用于训练或比赛后以及间歇训练中间的积极恢复，或者纯休闲。' },
+  { id:2, name:'有氧耐力',      lo:.56,  hi:.75,  loTxt:'56%–75%',     rpe:'2~3', color:'var(--z2)',
+    desc:'经典的是「长距离慢跑（LSD）」训练。这是铁人三项比赛中大多数年龄组都会参考的强度，输出和疲劳感都比较小，但是会随着长时间的稳定骑行而增大。通常只有在这个区间的高端或者较长的骑行中才需要集中精神以保持强度。这个强度基本不影响正常交谈。训练时间一般在 90~120 分钟，也可以更少。单次长时间训练需要 24 小时以上才能完全恢复。' },
+  { id:3, name:'节奏（Tempo）', lo:.76,  hi:.90,  loTxt:'76%–90%',     rpe:'4~5', color:'var(--z3)',
+    desc:'典型的轻快集体骑行、高速公路比赛大集团当中、精英铁人三项赛、半程铁人三项赛大多数年龄组以及山地车马拉松赛的强度。长时间稳定骑行 20~60 分钟。输出和疲劳感比 2 区明显增加；呼吸更深、更有节奏；交谈变得断断续续。3 区训练的恢复时间比 2 区长，但如果每次训练时间不长，可以连续几天进行。' },
+  { id:4, name:'乳酸阈值',      lo:.91,  hi:1.05, loTxt:'91%–105%',    rpe:'6~7', color:'var(--z4)',
+    desc:'这个区间涵盖了 FTP。通常用于 30~90 分钟时长的公路计时赛或铁人三项赛的自行车部分。输出很高，疲劳感很强；呼吸费力，交谈困难。这个强度是一种精神上的挑战。这个强度的间歇训练非常常见，时长通常为 6~20 分钟，恢复时间为 1/4 间歇时间。可以连续进行 4 区训练，但不常见。4 区训练需要专门恢复。' },
+  { id:5, name:'VO₂max',        lo:1.06, hi:1.20, loTxt:'106%–120%',   rpe:'7~8', color:'var(--z5)',
+    desc:'典型的自行车比赛变速的强度。不同于可以跟车的比赛、短爬坡冲刺和奥运会比赛距离，长距离铁人三项运动员很少使用这个强度。这个强度的间歇训练最常见，间歇和恢复时间一般为 2~6 分钟。输出非常高，疲劳感特别强。单次训练时间很难超过 30 分钟。无法进行交谈。这个强度的训练恢复非常关键。5 区连续训练非常困难，几乎不推荐。' },
+  { id:6, name:'无氧能力',      lo:1.21, hi:1.50, loTxt:'121%–150%',   rpe:'>8',  color:'var(--z6)',
+    desc:'绕圈赛以及公路和山地车比赛中会出现短时间的此强度骑行，但很少见于铁人三项比赛。训练为短（30~120 秒）、高强度间歇来增加无氧能力。输出极高，疲劳感极强，无法交谈。不推荐连续进行 6 区训练。' },
+  { id:7, name:'冲刺能力',      lo:1.51, hi:9,    loTxt:'>150%',       rpe:'最大', color:'var(--z7)',
+    desc:'此区用于非常短、非常高强度的骑行，例如场地车起步或公路比赛中 30 秒以内的冲刺。此区对肌肉的压力大于对能量系统的压力。' }
+];
+
+var FTP = 250;
+function w(ratio){ return Math.round(FTP * ratio); }
+function range(z){
+  if (z.id === 1) return '<' + w(.55) + 'W';
+  if (z.id === 7) return '>' + w(1.50) + 'W';
+  return w(z.lo) + '–' + w(z.hi) + 'W';
+}
+function renderZones(){
+  document.getElementById('zBody').innerHTML = ZONES.map(function(z){
+    return '<tr>'
+      + '<td><span class="zid" style="background:' + z.color + '">' + z.id + '</span></td>'
+      + '<td class="zname">' + z.name + '</td>'
+      + '<td class="zftp">' + z.loTxt + '</td>'
+      + '<td class="zw">' + range(z) + '</td>'
+      + '<td class="zrpe">' + z.rpe + '</td>'
+      + '<td class="zdesc">' + z.desc + '</td>'
+    + '</tr>';
+  }).join('');
+}
+/* 课型里出现的折算行：原文只给 %FTP / 区号，这里按 FTP 换算成瓦 */
+function renderCalcs(){
+  var set = function(id, val, rangeTxt){
+    var a = document.getElementById(id); if (a) a.textContent = val;
+    var b = document.getElementById(id + 'R'); if (b) b.textContent = rangeTxt;
+  };
+  set('c-ss', FTP + 'W', w(.88) + '–' + w(.93) + 'W（IF 0.88–0.93）');
+  set('c-cr', FTP + 'W', w(.91) + '–' + w(1.05) + 'W（4 区）');
+  set('c-tp', FTP + 'W', w(.76) + '–' + w(.90) + 'W（3 区）');
+  set('c-vo2', FTP + 'W', w(1.06) + '–' + w(1.20) + 'W（5 区）');
+  set('c-mb', FTP + 'W', w(1.21) + '–' + w(1.50) + 'W（20~30 秒就不必看平均了，看峰值）');
+}
+function refresh(){
+  renderZones();
+  renderCalcs();
+}
+document.getElementById('ftpIn').addEventListener('input', function(){
+  var v = parseInt(this.value, 10);
+  if (!isNaN(v) && v >= 80 && v <= 500){ FTP = v; refresh(); }
+});
+refresh();
+</script>
+</body>
+</html>
