@@ -82,8 +82,9 @@ node scripts/smoke-offline.mjs   # 离线冒烟：桩数据验证输出渲染，
 | `training/course-library/` | **课型基座**：12 个课型 × 6 种能力，整理自《自行车功率训练完全指南》附录 A |
 | `training/course-packs/` | **外部课程包**：C 包 8 周六修 16 节 FIT + 机器可读 `manifest.json` |
 | `training/reports/` | 外部计划包 A/B 的拆解与适配性对比报告 |
+| `training/dialogue/` | **训练对话档案**：2026-09-20 → 10-20 的按日对话记录（已脱敏，6.0 MB） |
 
-细节见 [`training/README.md`](training/README.md)。
+细节见 [`training/README.md`](training/README.md) 与 [`training/dialogue/README.md`](training/dialogue/README.md)。
 
 > HTML 产物均为单文件、零依赖，双击即可打开；改表头 FTP 会按 `%FTP` 重算全表瓦数。
 
